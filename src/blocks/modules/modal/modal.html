@@ -1,0 +1,162 @@
+<div class="modal">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <form action="#">
+                    <div class="modal-body">
+                        <div class="group group-two">
+                            <div class="group">
+                                <input type="text" placeholder="Введите имя">
+                            </div>
+                            <div class="group">
+                                <input type="text" placeholder="Введите фамилию">
+                            </div>
+                        </div>
+                        <div class="group group-two">
+                            <div class="group">
+                                <input type="text" placeholder="Телефон">
+                            </div>
+                            <div class="group">
+                                <input type="text" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="group-box">
+                            <div class="group group-two">
+                                <div class="group">
+                                    <label for="f-date-in">Дата заезда</label>
+                                    <div class="with-addon">
+                                    <span class="addon">
+                                        <svg>
+                                            <use xlink:href="../img/sprites/sprite.svg#icon-calendar-date"></use>
+                                        </svg>
+                                    </span>
+                                        <input type="text" id="f-date-in" value="04.04.2020">
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <label for="f-time-in">Время заезда</label>
+                                    <select name="time-in" id="f-time-in">
+                                        <option value="14:00">14:00</option>
+                                        <option value="02:00">02:00</option>
+                                    </select>
+                                </div>
+                                <div class="group">
+                                    <label for="f-date-out">Дата выезда</label>
+                                    <div class="with-addon">
+                                    <span class="addon">
+                                        <svg>
+                                            <use xlink:href="../img/sprites/sprite.svg#icon-calendar-date"></use>
+                                        </svg>
+                                    </span>
+                                        <input type="text" id="f-date-out" value="04.04.2020">
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <label for="f-time-out">Время заезда</label>
+                                    <select name="time-in" id="f-time-out">
+                                        <option value="12:00">12:00</option>
+                                        <option value="13:00">13:00</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="group group-two">
+                                <div class="group">
+                                    <label for="f-count-adults">Взрослых в номере</label>
+                                    <select name="count-adults" id="f-count-adults">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                    </select>
+                                </div>
+                                <div class="group">
+                                    <label for="f-count-child">Дети от 5 до 12 лет</label>
+                                    <select name="time-in" id="f-count-child">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                    </select>
+                                </div>
+                                <div class="group">
+                                    <label for="f-count-child-small">Дети до 5 лет</label>
+                                    <select name="time-in" id="f-count-child-small">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                    </select>
+                                </div>
+                                <div class="group">
+                                    <label for="f-count-sleeping-places">Спальных мест</label>
+                                    <select name="count-sleeping-places" id="f-count-sleeping-places">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group group-two">
+                            <div class="group">
+                                <label for="f-tariff">Тариф</label>
+                                <select name="tariff" id="f-tariff">
+                                    <option value="Семейный">Семейный</option>
+                                    <option value="Акция">Акция</option>
+                                </select>
+                            </div>
+                            <div class="group">
+                                <label for="f-discount">Скидка</label>
+                                <select name="time-in" id="f-discount">
+                                    <option value="Семейный">Семейный</option>
+                                    <option value="Акция">Акция</option>
+                                </select>
+                            </div>
+                            <div class="group">
+                                <label for="f-prepay">Предоплата</label>
+                                <input type="text" id="f-prepay" value="2500">
+                            </div>
+                        </div>
+                        <div class="group-comment">
+                            <div class="row">
+                                <div class="col-8">
+                                    <div class="group">
+                                        <label for="f-comment">Комментарий</label>
+                                        <textarea name="comment" id="f-comment"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="group">
+                                        <label for="f-source-of-sale">Источник продажи</label>
+                                        <select name="source-of-sale" id="f-source-of-sale">
+                                            <option value="Прямая продажа">Прямая продажа</option>
+                                            <option value="booking.com">booking.com</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group-total">
+                            <div class="label">Общая стоимость:</div>
+                            <div class="total"><span>55 000</span> р.</div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="row">
+                            <div class="col-5">
+                                <div class="btn-box">
+                                    <div class="btn">Закрыть</div>
+                                </div>
+                            </div>
+                            <div class="col-7 text-right">
+                                <div class="btn-box">
+                                    <div class="btn btn-delete">Удалить</div>
+                                </div>
+                                <div class="btn-box">
+                                    <div class="btn btn-checkin">Заселить</div>
+                                </div>
+                                <div class="btn-box">
+                                    <div class="btn btn-save">Сохранить</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

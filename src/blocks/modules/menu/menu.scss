@@ -1,0 +1,50 @@
+.sb-left {
+    background-color: #324150;
+    text-align: center;
+    padding: 1rem 2rem 1rem 1rem;
+    min-width: 260px;
+}
+.logo-box {
+    text-align: left;
+    img {
+        width: 40px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    span {
+        font-size: rem(20);
+        margin: 0 0 0 1rem;
+        color: #ffffff;
+    }
+}
+.menu-box {
+    padding: .5rem 0;
+    margin: 2rem 0 0 0;
+    ul {
+        list-style: none;
+        li {
+            text-align: left;
+            & + li {
+                margin: 1rem 0;
+                padding: 1rem 0 0 0;
+                border-top: 1px solid hsl(206, 10%, 34%);
+            }
+            a {
+                font-size: rem(12);
+                text-transform: uppercase;
+                color: #ffffff;
+                display: inline-block;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            svg {
+                width: 25px;
+                height: 25px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+    }
+}

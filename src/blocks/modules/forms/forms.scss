@@ -1,0 +1,55 @@
+.group {
+    position: relative;
+    & + .group {
+        margin: 1rem 0 0 0;
+    }
+    input, select, textarea {
+        color: #444545;
+        display: block;
+        width: 100%;
+        border: 1px solid $border_input;
+        padding: 8px 12px;
+        background-color: #fff;
+        font-size: rem(13);
+        border-radius: 3px;
+    }
+    label {
+        font-size: rem(13);
+        display: block;
+        margin: 0 0 .3rem 0;
+        color: #444545;
+    }
+    select {
+        padding: 6px 10px;
+    }
+    &.group-two {
+        display: flex;
+        align-items: center;
+        .group {
+            width: 100%;
+            & + .group {
+                margin: 0 0 0 1rem;
+            }
+        }
+    }
+    .addon {
+        padding: 4px 10px 3px 10px;
+        background-color: #f0f5f5;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        border: 1px solid $border_input;
+        border-bottom-left-radius: 3px;
+        border-top-left-radius: 3px;
+        svg {
+            margin: 0;
+        }
+    }
+    .with-addon {
+        display: flex;
+        align-items: center;
+        input {
+            padding: 8px 8px 8px 52px;
+        }
+    }
+}

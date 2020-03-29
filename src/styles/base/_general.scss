@@ -3,10 +3,161 @@ h1, h2, h3, h4, h5, h6, ul {
     padding: 0;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+.container-full {
+    height: 100vh;
+    display: flex;
+}
+
 .container {
     @include container();
     @include sm(max-width, rem(510));
     @include md(max-width, rem(690));
     @include lg(max-width, rem(930));
     @include xl(max-width, rem(1110));
+}
+
+.row {
+    @include row-flex();
+}
+
+.col-12 {
+    @include col();
+    @include size(12);
+}
+.col-11 {
+    @include col();
+    @include size(12);
+    @include size-lg(11);
+}
+.col-10 {
+    @include col();
+    @include size(12);
+    @include size-lg(10);
+}
+.col-4 {
+    @include col();
+    @include size(12);
+    @include size-lg(4);
+}
+.col-3 {
+    @include col();
+    @include size(12);
+    @include size-lg(3);
+}
+.col-2 {
+    @include col();
+    @include size(12);
+    @include size-lg(2);
+}
+.col-1 {
+    @include col();
+    @include size(12);
+    @include size-lg(1);
+}
+.col-5 {
+    @include col();
+    @include size(12);
+    @include size-lg(5);
+}.col-6 {
+    @include col();
+    @include size(12);
+    @include size-lg(6);
+}
+.col-7 {
+    @include col();
+    @include size(12);
+    @include size-lg(7);
+}
+.col-8 {
+    @include col();
+    @include size(12);
+    @include size-lg(8);
+}
+.col-9 {
+    @include col();
+    @include size(12);
+    @include size-lg(9);
+}
+.col-4 {
+    @include col();
+    @include size(12);
+    @include size-lg(4);
+}
+
+body {
+    color: $text_color;
+    background-color: $main_color;
+    font-family: "Roboto", sans-serif;
+    font-size: rem(16);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+img[src=""] {
+    display: none;
+}
+
+input, textarea {
+    &:focus::placeholder {
+        color: transparent;
+    }
+}
+
+a {
+    outline: none;
+}
+
+svg {
+    --primary: #a5b3bb;
+    fill: $svg_fill;
+    width: 20px;
+    height: 20px;
+    margin-right: .4rem;
+}
+
+.btn-box {
+    display: inline-block;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    padding: 8px 20px;
+    background: $btn_background;
+    border-radius: 3px;
+    color: #ffffff;
+    font-size: rem(11);
+    text-transform: uppercase;
+    &:hover {
+        cursor: pointer;
+    }
+    &-save {
+        background: #179be6;
+    }
+    &-checkin {
+        background: rgba(23, 155, 230, 0.7);
+    }
+    &-delete {
+        background-color: #fff;
+        border: 1px solid #d2dfe6;
+        color: #444545;
+    }
+}
+
+.text-right {
+    text-align: right;
+}
+
+.main {
+    flex-grow: 1;
+}
+:root {
+    --data-width: 1;
+    --deflection: 1.02;
 }
