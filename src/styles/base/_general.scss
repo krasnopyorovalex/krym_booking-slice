@@ -130,28 +130,49 @@ svg {
     align-items: center;
     padding: 8px 20px;
     background: $btn_background;
-    border-radius: 3px;
+    border-radius: 5px;
+    border: 1px solid #d2dfe6;
     color: #ffffff;
     font-size: rem(11);
     text-transform: uppercase;
+    transition: all .2s ease-out;
     &:hover {
         cursor: pointer;
+        background: #D87C84;
     }
     &-save {
         background: #179be6;
+        &:hover {
+            background: #1079C5;
+        }
     }
     &-checkin {
-        background: rgba(23, 155, 230, 0.7);
+        background: #4DBFF0;
+        &:hover {
+            background: #3897CE;
+        }
     }
     &-delete {
         background-color: #fff;
-        border: 1px solid #d2dfe6;
         color: #444545;
+        &:hover {
+            background: #FFE7E6;
+        }
+    }
+    &-add {
+        background-color: #179be6;
+        &:hover {
+            background: #1079C5;
+        }
     }
 }
 
 .text-right {
     text-align: right;
+}
+
+.text-center {
+    text-align: center;
 }
 
 .main {

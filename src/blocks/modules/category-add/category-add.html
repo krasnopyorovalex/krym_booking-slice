@@ -1,0 +1,25 @@
+<div class="box">
+    <form action="#" method="post">
+        <div class="row">
+            <div class="col-9">
+                <div class="group">
+                    <label for="f-name">Название категории</label>
+                    <input type="text" id="f-name">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="group">
+                    <label for="f-tariff">Тариф</label>
+                    <select name="tariff" id="f-tariff">
+                        <option value="1">Стандарт</option>
+                        <option value="2">С завтраком</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        @@include("../tabs/tabs.html")
+        <div class="group">
+            <button type="submit" class="btn btn-save">Сохранить</button>
+        </div>
+    </form>
+</div>

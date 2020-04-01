@@ -1,0 +1,38 @@
+.tab-contents {
+    margin: 2rem 0 1rem 0;
+    font-size: rem(12);
+    position: relative;
+}
+.tab-nav {
+    margin: 0;
+    padding: 0;
+}
+.tab-link {
+    display: inline-block;
+    z-index: 10;
+    padding: 10px 20px;
+    transition: all 300ms ease;
+    border-top: 1px solid $border_input;
+    border-left: 1px solid $border_input;
+    position: relative;
+    font-weight: 500;
+    &:hover {
+        cursor: pointer;
+    }
+    &:last-child {
+        border-right: 1px solid $border_input;
+    }
+    &.is_active {
+        z-index: 10;
+        background-color: #f0e7e7;
+    }
+}
+.tab-content {
+    display: none;
+    border: 1px solid $border_input;
+    min-height: 100px;
+    &.is_active {
+        display: block;
+        padding: 1rem;
+    }
+}

@@ -5,7 +5,8 @@
     right: 0;
     bottom: 0;
     z-index: 200;
-    //display: none;
+    display: none;
+    opacity: 0;
     &:before {
         content: "";
         position: absolute;
@@ -36,9 +37,12 @@
     }
 }
 .group-box {
-    padding: 1rem;
+    padding: 1rem 1rem 0 1rem;
     margin: 2rem 0;
     border: 1px solid $border_input;
+    .group {
+        margin: 0 0 1rem 0;
+    }
 }
 .group-comment {
     margin: 1rem 0;
