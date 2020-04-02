@@ -52,4 +52,15 @@
             border-left: none;
         }
     }
+    .simple-editor {
+        display: none;
+    }
+    .__toolbar {
+        select {
+            width: auto;
+        }
+    }
+}
+.textarea-box {
+    margin: 1rem 0 0 0;
 }

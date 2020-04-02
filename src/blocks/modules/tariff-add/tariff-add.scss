@@ -1,0 +1,91 @@
+.box {
+    &.box-with-tabs {
+        form {
+            padding: 0;
+            .tab-contents {
+                margin: 0;
+            }
+            .group {
+                &.with-btn {
+                    margin: 0 0 1rem 1rem;
+                }
+            }
+            .tab-content {
+                border: none;
+            }
+            .tab-nav {
+                color: #676a75;
+                border-bottom: 2px solid $border_input;
+            }
+            .tab-link {
+                border: none;
+                background-color: #ffffff;
+                color: #a5b3bb;
+                padding: 15px 20px;
+                position: relative;
+                &:hover {
+                    color: $text_color;
+                }
+                &:after {
+                    content: "";
+                    position: absolute;
+                    bottom: -2px;
+                    right: 0;
+                    left: 0;
+                    height: 2px;
+                    background-color: #179be6;
+                    transition: all 300ms ease;
+                    opacity: 0;
+                }
+                &.is_active {
+                    color: $text_color;
+                    &:after {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+.categories-list {
+    &-item {
+        &-name {
+            display: flex;
+            align-items: center;
+            font-size: rem(13);
+            font-weight: 500;
+            &-icon {
+                margin: 0 0 0 .5rem;
+                transition: all 300ms ease;
+            }
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        &-prices {
+            display: none;
+            margin: .5rem 0;
+            border: 1px solid $border_input;
+            &-item {
+                &-name {
+                    padding: .8rem 1rem;
+                    font-weight: 500;
+                    font-size: rem(13);
+                    background-color: #c3fffd;
+                    border-bottom: 1px solid $border_input;;
+                }
+                &-values {
+                    padding: 1rem;
+                }
+            }
+        }
+        &-name.active {
+            .categories-list-item-name-icon {
+                transform: rotate(180deg);
+            }
+            & + .categories-list-item-prices {
+                display: block;
+            }
+        }
+    }
+}

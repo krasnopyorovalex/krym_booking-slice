@@ -27,12 +27,14 @@
         }
     }
     .search-box-icons {
-        svg {
-            width: 30px;
-            height: 30px;
-            margin: 0;
-            &:hover {
-                cursor: pointer;
+        .h-icon {
+            svg {
+                width: 30px;
+                height: 30px;
+                margin: 0;
+                &:hover {
+                    cursor: pointer;
+                }
             }
         }
         &-item {
@@ -52,7 +54,7 @@
                 background-color: #e41e1e;
                 font-size: rem(10);
             }
-            a {
+            > a {
                 text-decoration: none;
                 display: inline-block;
             }
@@ -64,4 +66,85 @@
 }
 .icon-question {
     fill: none;
+}
+.has-board-info {
+    position: relative;
+    &:hover {
+        cursor: pointer;
+    }
+    &.is-open {
+        .board-info {
+            display: block;
+        }
+    }
+}
+.board-info {
+    position: absolute;
+    background-color: #fff;
+    min-width: 250px;
+    right: -2.8rem;
+    top: 2.5rem;
+    border-radius: 3px;
+    border: 1px solid #e0e9ee;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    display: none;
+    &:after {
+        content: "";
+        position: absolute;
+        top: -.6rem;
+        right: 3.25rem;
+        width: 0;
+        height: 0;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-bottom: 10px solid #a5b3bb;
+    }
+    &-date {
+        color: #a5b3bb;
+        font-size: rem(11);
+        margin: .2rem 0 0 0;
+        text-align: right;
+    }
+    &-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: 1px solid $border_input;
+        background-color: #c3fffd;
+        margin: 0 .8rem 0 0;
+        padding: 6px;
+        svg {
+            width: 18px;
+            height: 18px;
+        }
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        max-height: 300px;
+        overflow-y: auto;
+        li {
+            font-size: rem(13);
+            > a {
+                display: flex;
+                align-items: flex-start;
+                padding: .8rem 0 .8rem 1rem;
+                color: $text_color;
+                text-decoration: none;
+            }
+            & + li {
+                border-top: 1px solid #edf2f5;
+            }
+            &:after {
+                top: calc(50% - 5px);
+            }
+            &:hover {
+                background-color: #c3fffd;
+            }
+        }
+    }
 }

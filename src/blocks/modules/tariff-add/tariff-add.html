@@ -1,0 +1,94 @@
+<div class="box box-with-tabs">
+    <form action="#" method="post">
+        <div id="tabs" class="tab-contents">
+            <div class="tab-nav">
+                <div class="tab-link is_active">Основное</div><div class="tab-link">Тарифы категорий номеров</div>
+            </div>
+            <div class="tab-content is_active">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="group">
+                            <label for="f-name">Название тарифа</label>
+                            <input type="text" id="f-name">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="group">
+                            <label for="f-food">Питание</label>
+                            <select name="food" id="f-food">
+                                <option value="1">Без питания</option>
+                                <option value="2">3-х разовое</option>
+                                <option value="3">Только завтрак</option>
+                                <option value="4">2-х разовое</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-3"></div>
+                    <div class="col-2"></div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="group">
+                            <div class="textarea-box">
+                                <label for="editor">Описание тарифа</label>
+                                <textarea id="editor" class="simple-editor" name="body"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content">
+                <div class="categories-list">
+                    <div class="categories-list-item">
+                        <div class="categories-list-item-name">
+                            <div class="categories-list-item-name-value">2-местный номер люкс с кроватью и балконом</div>
+                            <div class="categories-list-item-name-icon">
+                                <svg>
+                                    <use xlink:href="../img/sprites/sprite.svg#icon-cheveron-down"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="categories-list-item-prices">
+                            <div class="categories-list-item-prices-item">
+                                <div class="categories-list-item-prices-item-name">
+                                    Период с 01.06.2020 по 31.06.2020
+                                </div>
+                                <div class="categories-list-item-prices-item-values">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="group">
+                                                <label for="f-cost">Стоимость номера</label>
+                                                <input type="text" id="f-cost">
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="group">
+                                                <label for="f-cost">Стоимость номера</label>
+                                                <input type="text" id="f-cost">
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="group">
+                                                <label for="f-cost">Стоимость номера</label>
+                                                <input type="text" id="f-cost">
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="group">
+                                                <label for="f-cost">Стоимость номера</label>
+                                                <input type="text" id="f-cost">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="group with-btn">
+            <button type="submit" class="btn btn-save">Сохранить</button>
+        </div>
+    </form>
+</div>

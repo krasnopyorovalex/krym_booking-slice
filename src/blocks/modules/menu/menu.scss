@@ -32,20 +32,7 @@
             & + li {
                 border-top: 1px solid hsl(206, 10%, 34%);
             }
-            &:after {
-                content: "";
-                position: absolute;
-                right: 0;
-                top: calc(50% + 3px);
-                width: 0;
-                height: 0;
-                border-top: 5px solid transparent;
-                border-right: 8px solid #a5b3bb;
-                border-bottom: 5px solid transparent;
-                opacity: 0;
-                transition: all 300ms ease;
-            }
-            &:hover, &.active {
+            &.active {
                 &:after {
                     opacity: 1;
                 }
@@ -66,6 +53,7 @@
                 height: 25px;
                 display: inline-block;
                 vertical-align: middle;
+                margin-right: .4rem;
             }
         }
     }
