@@ -62,7 +62,7 @@
             }, duration);
         };
 
-        const fadeOut = () => {
+        const fadeOut = (isNeedRemove = false) => {
             let opacity = 1;
 
             let timer = setInterval(function() {
@@ -72,6 +72,9 @@
                     clearInterval(timer);
                     target.style.display = "none";
 
+                    if (isNeedRemove) {
+                        target.remove();
+                    }
                 }
 
                 target.style.opacity = opacity;

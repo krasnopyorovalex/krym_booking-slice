@@ -22,7 +22,7 @@ export const createToolbar = (options, execCommand) => {
       BEFORE_END,
       createSelect(
         'formatblock',
-        'Styles',
+        'Стили',
         [
           { value: 'p', text: 'Параграф'},
         ],

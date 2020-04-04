@@ -7,7 +7,6 @@
     width: 100%;
     border: 1px solid #e1e2e4;
     padding: 14px 10px;
-    background-color: #f3f7fa;
 }
 .__editor p, .__editor ul, .__editor ol {
     margin: 0 0 8px 0;
@@ -21,7 +20,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: 5px;
-    background-color: #edf0f5;
+    //background-color: #e5e5e5;
     border-top: 1px solid #e1e2e4;
     border-right: 1px solid #e1e2e4;
     border-left: 1px solid #e1e2e4;
@@ -50,7 +49,7 @@ select.__toolbar-item {
 
 .__toolbar-item:hover,
 .__toolbar-item.active {
-    background: #f0f0f0;
+    background: #e5e5e5;
 }
 
 .__toolbar-separator {
@@ -60,12 +59,4 @@ select.__toolbar-item {
 
 .__toolbar-separator:last-child {
     display: none;
-}
-.info-text {
-    display: block;
-    margin: 0 0 0 .5rem;
-    color: #6e6e6e;
-    font-size: 10px;
-    text-align: right;
-    line-height: 33px;
 }

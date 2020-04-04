@@ -17,12 +17,22 @@
         background-color: rgba(0, 0, 0, .4);
         z-index: -1;
     }
+    &.modal-booked {
+        //display: block;
+        //opacity: 1;
+        form {
+            max-width: 600px;
+        }
+    }
     form {
         box-shadow: 0 4px 6px rgba(0,0,0,.1);
         background-color: #fff;
         max-width: 700px;
         margin: 5% auto;
         position: relative;
+        .group {
+            margin: 0 0 .5rem 0;
+        }
     }
     &-footer {
         padding: 1rem 3rem;
@@ -34,11 +44,47 @@
         textarea {
             min-height: 120px;
         }
+        &-title {
+            display: block;
+            margin: 0 0 1rem 0;
+            padding: 0 0 .5rem 0;
+            font-weight: 500;
+            border-bottom: 1px solid $border_input;
+        }
+    }
+    .booked-info {
+        &-item {
+            display: flex;
+            align-items: center;
+            font-size: rem(13);
+            margin: .6rem 0;
+            &:last-child {
+                margin: .6rem 0 0 0;
+            }
+            & + .booked-info-item {
+                border-top: 1px solid #e9f0f5;
+                padding: .6rem 0 0 0;
+            }
+            &-value {
+                margin: 0 0 0 auto;
+                a {
+                    color: $text_color;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+                .cost {
+                    font-weight: 500;
+                    font-size: rem(18);
+                    color: #179bE6;
+                }
+            }
+        }
     }
 }
 .group-box {
     padding: 1rem 1rem 0 1rem;
-    margin: 2rem 0;
+    margin: 1rem 0;
     border: 1px solid $border_input;
     .group {
         margin: 0 0 1rem 0;

@@ -17,6 +17,10 @@ export function fadeIn (target, duration=350) {
     return $(target).fadeIn(duration);
 }
 
-export function fadeOut (target, duration=350) {
-    return $(target).fadeOut(duration);
+export function fadeOut (target) {
+    return $(target).fadeOut();
+}
+
+export function fadeOutAndRemove (target) {
+    return $(target).fadeOut(true);
 }

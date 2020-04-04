@@ -7,3 +7,60 @@
         border: 1px solid $border_input;
     }
 }
+.category-services {
+    margin: 0 0 .5rem 0;
+    &-item {
+        &-name {
+            font-weight: 500;
+        }
+        &-list {
+            margin: 1rem 0 0 0;
+            ul {
+                list-style: none;
+                li {
+                    position: relative;
+                    & + li {
+                        margin: .8rem 0 0 0;
+                    }
+                }
+            }
+        }
+    }
+    input[type="checkbox"] {
+        display: none;
+        width: auto;
+        height: auto;
+        &:checked + label:before {
+            background-color: #4dbff0;
+        }
+    }
+    label {
+        position: relative;
+        padding-left: 1.5rem;
+        &:hover {
+            cursor: pointer;
+        }
+        &:before {
+            box-sizing: border-box;
+            transition: all .3s ease;
+            border: 1px solid #c1bebe;
+            background-color: #fff;
+            content: '';
+            width: 16px;
+            height: 16px;
+            left: 0;
+            position: absolute;
+            top: 0;
+        }
+        &:after {
+            box-sizing: border-box;
+            position: absolute;
+            content: "";
+            border: 3px solid #fff;
+            height: 12px;
+            width: 12px;
+            left: 2px;
+            top: 2px;
+        }
+    }
+}

@@ -29,7 +29,7 @@ export const transformToEditor = (editor, textarea = null) => {
   // Listen for events to detect where the caret is
   let isFormatBlockP = true;
   const updateActiveState = () => {
-    const toolbarSelects = toolbar.querySelectorAll('select[data-command-id]');
+    const toolbarSelects = toolbar.querySelectorAll('select[stubs-command-id]');
     for (const select of toolbarSelects) {
       if (textarea) {
         textarea.innerHTML = editor.innerHTML.replace('<br>','');
@@ -40,7 +40,7 @@ export const transformToEditor = (editor, textarea = null) => {
       }
     }
 
-    const toolbarButtons = toolbar.querySelectorAll('button[data-command-id]');
+    const toolbarButtons = toolbar.querySelectorAll('button[stubs-command-id]');
     for (const button of toolbarButtons) {
       const active = document.queryCommandState(button.dataset.commandId);
       button.classList.toggle('active', active);

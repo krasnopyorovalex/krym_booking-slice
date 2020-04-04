@@ -1,0 +1,116 @@
+<div class="box">
+    <form action="#" method="post">
+        <div class="row">
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="group">
+                            <label for="f-name">Имя</label>
+                            <input type="text" id="f-name">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="group">
+                            <label for="f-surname">Фамилия</label>
+                            <input type="text" id="f-surname">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="group">
+                            <label for="f-phone">Телефон</label>
+                            <input type="text" id="f-phone">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="group">
+                            <label for="f-surname">Email</label>
+                            <input type="text" id="f-email">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="group">
+                            <label for="f-date-in">Дата заезда</label>
+                            <div class="with-addon">
+                                <span class="addon">
+                                    <svg>
+                                        <use xlink:href="../img/sprites/sprite.svg#icon-calendar-date"></use>
+                                    </svg>
+                                </span>
+                                <input type="text" id="f-date-in" value="2020-04-03">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="group">
+                            <label for="f-date-in">Время заезда</label>
+                            <input type="text" id="f-time-in">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="group">
+                            <label for="f-date-out">Дата выезда</label>
+                            <div class="with-addon">
+                                <span class="addon">
+                                    <svg>
+                                        <use xlink:href="../img/sprites/sprite.svg#icon-calendar-date"></use>
+                                    </svg>
+                                </span>
+                                <input type="text" id="f-date-out" value="2020-04-20">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="group">
+                            <label for="f-date-out">Время выезда</label>
+                            <input type="text" id="f-time-out">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="group">
+                            <label for="f-count-adults">Взрослых в номере</label>
+                            <select name="count-adults" id="f-count-adults">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="group">
+                            <label for="f-count-child">Дети от 5 до 12 лет</label>
+                            <select name="time-in" id="f-count-child">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="group">
+                            <label for="f-count-child-small">Дети до 5 лет</label>
+                            <select name="time-in" id="f-count-child-small">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="group">
+                            <label for="f-count-sleeping-places">Спальных мест</label>
+                            <select name="count-sleeping-places" id="f-count-sleeping-places">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="group with-btn">
+            <button type="submit" class="btn btn-save">Сохранить</button>
+        </div>
+    </form>
+</div>

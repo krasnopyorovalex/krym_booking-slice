@@ -49,6 +49,9 @@
 }
 .categories-list {
     &-item {
+        & + & {
+            margin: .8rem 0 0 0;
+        }
         &-name {
             display: flex;
             align-items: center;
@@ -64,18 +67,31 @@
         }
         &-prices {
             display: none;
-            margin: .5rem 0;
-            border: 1px solid $border_input;
+            margin: 0 0 .5rem 0;
+            border-bottom: 1px solid $border_input;
+            border-left: 1px solid $border_input;
+            border-right: 1px solid $border_input;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             &-item {
                 &-name {
                     padding: .8rem 1rem;
                     font-weight: 500;
                     font-size: rem(13);
                     background-color: #c3fffd;
-                    border-bottom: 1px solid $border_input;;
+                    border-bottom: 1px solid $border_input;
+                    border-top: 1px solid $border_input;
+                    span {
+                        display: block;
+                        color: #a5b3bb;
+                        font-weight: normal;
+                        margin: .2rem 0 0 0;
+                    }
                 }
                 &-values {
                     padding: 1rem;
+                    .group {
+                        margin: 0 0 1rem 0;
+                    }
                 }
             }
         }
