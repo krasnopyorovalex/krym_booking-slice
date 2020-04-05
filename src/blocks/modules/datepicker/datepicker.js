@@ -10,3 +10,9 @@ new DatePicker({
     dateFormat: 'yyyy-MM-dd',
     minDate: 0
 });
+new DatePicker({
+    id: 'f-from-date',
+    dateFormat: 'yyyy-MM-dd',
+    minDate: 0,
+    callback: () => document.getElementById('f-from-date').closest('form').submit()
+});

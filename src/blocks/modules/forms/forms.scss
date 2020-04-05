@@ -7,6 +7,17 @@
     & + .group {
         margin: 1rem 0 0 0;
     }
+    &.only-textarea {
+        textarea {
+            min-height: 120px;
+            line-height: 20px;
+        }
+    }
+    &.with-checkbox {
+        label {
+            display: inline-block;
+        }
+    }
     input, select, textarea {
         color: #444545;
         display: block;
@@ -17,9 +28,15 @@
         font-size: rem(13);
         border-radius: 3px;
         transition: all 300ms ease;
+        outline: none;
         &:focus {
             border: 1px solid #179be6;
         }
+    }
+    input[type=checkbox] {
+        display: inline-block;
+        width: auto;
+        vertical-align: middle;
     }
     label {
         font-size: rem(13);

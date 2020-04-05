@@ -147,7 +147,6 @@
     }
     .all-view {
         display: block;
-        padding: .5rem 0;
         text-align: center;
         background-color: #179be6;
         font-size: rem(11);
@@ -158,6 +157,8 @@
             background: #1079C5;
         }
         a {
+            padding: .5rem 0;
+            display: block;
             color: #fff;
             text-decoration: none;
         }

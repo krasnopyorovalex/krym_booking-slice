@@ -11,27 +11,13 @@
             text-align: center;
             .bh-current-date {
                 display: inline-block;
-                background-color: #fff;
-                box-shadow: 0 1px 0 rgba(0,0,0,.1);
                 border-radius: 3px;
                 border: 1px solid #e0e9ee;
-                > div {
-                    display: flex;
-                    align-items: center;
-                    font-size: rem(14);
-                    font-weight: 500;
-                    span {
+                .group {
+                    margin: 0;
+                    width: 130px;
+                    input {
                         text-align: center;
-                        background-color: #f0f5f5;
-                        padding: .2rem .5rem;
-                        border-right: 1px solid #e0e9ee;
-                        svg {
-                            margin: 0;
-                        }
-                        &:nth-child(2) {
-                            background: none;
-                            padding: .2rem .8rem;
-                        }
                     }
                 }
             }
