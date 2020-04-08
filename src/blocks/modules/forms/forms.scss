@@ -28,7 +28,6 @@
         font-size: rem(13);
         border-radius: 3px;
         transition: all 300ms ease;
-        outline: none;
         &:focus {
             border: 1px solid #179be6;
         }
@@ -45,7 +44,20 @@
         color: #444545;
     }
     select {
-        padding: 6px 10px;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        transition: none;
+        background-image: url('../img/svg/icon-cheveron-down.svg');
+        background-repeat: no-repeat;
+        background-position: right 6px top 50%;
+        background-size: 16px 16px;
+        &:focus {
+            outline: none;
+        }
+        &:-moz-focusring {
+            color: transparent;
+            text-shadow: 0 0 0 $text_color;
+        }
     }
     &.group-two {
         display: flex;
@@ -58,18 +70,19 @@
         }
     }
     .addon {
-        padding: 4px 8px 3px;
+        padding: 4px 8px;
         background-color: #f0f5f5;
         border: 1px solid $border_input;
         border-bottom-left-radius: 3px;
         border-top-left-radius: 3px;
         svg {
-            margin: 0;
+            width: 18px;
+            height: 19px;
         }
     }
     .with-addon {
         display: flex;
-        align-items: center;
+        align-items: stretch;
         input {
             padding: 8px 8px;
             width: calc(100% - 38px);

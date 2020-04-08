@@ -1,5 +1,5 @@
 .booking {
-    background: #c3fffd;
+    background: #fff;
     padding: 1rem;
     margin: 1rem;
     &-header {
@@ -7,12 +7,9 @@
         align-items: center;
         .bh-cd-box {
             width: 15%;
-            background: #c3fffd;
             text-align: center;
             .bh-current-date {
                 display: inline-block;
-                border-radius: 3px;
-                border: 1px solid #e0e9ee;
                 .group {
                     margin: 0;
                     width: 130px;
@@ -49,35 +46,19 @@
                     svg {
                         margin: 0;
                     }
-                }
-                &-current {
                     span {
                         background-color: #f0f5f5;
                         padding: .2rem .4rem;
                         border-right: 1px solid #e0e9ee;
-                        &:nth-child(2) {
-                            background-color: #ffffff;
-                            text-align: center;
-                            padding: .2rem 1rem;
-                            border:none;
-                        }
                     }
+                }
+                &-current {
                     svg {
                         transform: rotate(90deg);
                     }
                 }
                 &-next {
                     margin: 0 0 0 auto;
-                    span {
-                        background-color: #ffffff;
-                        text-align: center;
-                        padding: .2rem 1rem;
-                        &:nth-child(2) {
-                            background-color: #f0f5f5;
-                            padding: .2rem;
-                            border-left: 1px solid #e0e9ee;
-                        }
-                    }
                     svg {
                         transform: rotate(-90deg);
                     }
@@ -187,7 +168,7 @@
                     justify-content: flex-end;
                     align-self: stretch;
                     color: #667686;
-                    background-color: #fbf2f2;
+                    background-color: #E0F7F7;
                     .count {
                         padding: .8rem .2rem .4rem 0;
                     }
@@ -204,6 +185,7 @@
         border-left: 1px solid $border_cell;
         border-right: 1px solid $border_cell;
         transition: all 300ms ease;
+        position: relative;
         user-select: none;
         & + .cell {
             border-left: none;
@@ -248,7 +230,7 @@
         }
         &.status-confirm {
             .book-info {
-                background-color: #c5f8ff;
+                background-color: #b1f3fe;
             }
         }
         &.status-checkin {
@@ -300,9 +282,8 @@
         position: absolute;
         right: -1px;
         top: -1px;
-        background-color: #e41e1e;
-        color: #ffffff;
         padding: 2px 5px;
         font-size: rem(9);
+        font-weight: 500;
     }
 }
