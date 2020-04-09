@@ -1,12 +1,16 @@
 .booking {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: auto;
     background: #fff;
     padding: 1rem;
     margin: 1rem;
     &-header {
         display: flex;
         align-items: center;
+        padding: 0 .5rem 0 0;
         .bh-cd-box {
-            width: 15%;
+            width: 300px;
             text-align: center;
             .bh-current-date {
                 display: inline-block;
@@ -23,7 +27,7 @@
             display: flex;
             align-items: center;
             flex-wrap: wrap;
-            width: 85%;
+            width: calc(100% - 300px);
             .bh-month {
                 width: 100%;
                 display: flex;
@@ -83,6 +87,7 @@
         }
     }
     &-body {
+        padding: 0 .5rem 0 0;
         &-category {
             & + .booking-body-rooms {
                 .bb-free {
@@ -121,7 +126,7 @@
             .bb-name {
                 display: flex;
                 align-items: center;
-                width: 15%;
+                width: 300px;
                 padding: 0 .4rem;
                 font-size: rem(14);
                 > div {
@@ -140,7 +145,7 @@
                 }
             }
             .bb-free {
-                width: 85%;
+                width: calc(100% - 300px);
                 display: flex;
                 align-items: center;
                 .cell {
@@ -158,7 +163,7 @@
         &-room {
             align-items: stretch;
             .bb-name {
-                padding: 0 0 0 1rem;
+                padding: 0 .2rem 0 1rem;
                 font-size: rem(13);
             }
             .bb-free {
@@ -187,6 +192,7 @@
         transition: all 300ms ease;
         position: relative;
         user-select: none;
+        min-width: 36px;
         & + .cell {
             border-left: none;
         }

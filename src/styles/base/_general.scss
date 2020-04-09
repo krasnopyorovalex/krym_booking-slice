@@ -7,8 +7,13 @@ h1, h2, h3, h4, h5, h6, ul {
     box-sizing: border-box;
 }
 
+html, body, main {
+    height: 100%;
+}
+
 .container-full {
-    min-height: 100vh;
+    //min-height: 100vh;
+    height: 100%;
     display: flex;
 }
 
@@ -225,6 +230,7 @@ ul.with-triangle {
 
 .main {
     flex-grow: 1;
+    width: calc(100% - 250px);
 }
 :root {
     --data-width: 1;
