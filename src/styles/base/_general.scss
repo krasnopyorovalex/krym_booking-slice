@@ -158,10 +158,10 @@ svg {
         }
     }
     &-delete {
-        background-color: #fff;
-        color: #444545;
+        background-color: #e41e1e;
+        color: #ffffff;
         &:hover {
-            background: #FFE7E6;
+            background: #EE6053;
         }
     }
     &-add {
@@ -235,4 +235,5 @@ ul.with-triangle {
 :root {
     --data-width: 1;
     --deflection: 1.02;
+    --data-hour: 0;
 }

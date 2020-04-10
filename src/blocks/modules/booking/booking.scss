@@ -82,6 +82,19 @@
                     &:last-child {
                         border-right: 1px solid $border_cell;
                     }
+                    &.current {
+                        &:before {
+                            content: "";
+                            position: absolute;
+                            width: 12px;
+                            height: 12px;
+                            border-radius: 50%;
+                            top: -6px;
+                            left: calc(100% / (24 / var(--data-hour)) - 6px);
+                            background-color: #e41e1e;
+                            z-index: 10;
+                        }
+                    }
                 }
             }
         }
@@ -200,6 +213,44 @@
             background-color: $bg_cell_holiday;
             .week-day {
                 background-color: $bg_cell_holiday;
+            }
+        }
+        &.first-day {
+            &:before {
+                content: "";
+                position: absolute;
+                left: -1px;
+                top: -24px;
+                width: 1px;
+                height: 24px;
+                background-color: $border_cell;
+            }
+            &:after {
+                content: attr(data-month);
+                position: absolute;
+                top: -1.4rem;
+                left: .5rem;
+                font-size: rem(13);
+            }
+        }
+        &.last-day {
+            &:after {
+                content: attr(data-month);
+                position: absolute;
+                top: -1.4rem;
+                right: .5rem;
+                font-size: rem(13);
+            }
+        }
+        &.current {
+            &:after {
+                content: "";
+                position: absolute;
+                width: 1px;
+                left: calc(100% / (24 / var(--data-hour)));
+                top: 0;
+                bottom: 0;
+                background-color: #e41e1e;
             }
         }
         &.selected {
