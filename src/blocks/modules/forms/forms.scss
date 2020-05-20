@@ -7,6 +7,30 @@
     & + .group {
         margin: 1rem 0 0 0;
     }
+    &.placement {
+        margin: 0 0 .5rem 0;
+        input, select {
+            width: 50px;
+        }
+        select {
+            padding: 6px 12px;
+        }
+        & + .placement {
+            border-top: 1px dashed $border_input;
+            padding: .5rem 0 0 0;
+        }
+    }
+    .to-line {
+        display: flex;
+        align-items: center;
+        label, input, select {
+            display: inline-block;
+            text-align: center;
+        }
+        label {
+            margin: 0 auto 0 0;
+        }
+    }
     &.only-textarea {
         textarea {
             min-height: 120px;
@@ -51,6 +75,7 @@
         background-repeat: no-repeat;
         background-position: right 6px top 50%;
         background-size: 16px 16px;
+        line-height: normal;
         &:focus {
             outline: none;
         }
@@ -70,6 +95,8 @@
         }
     }
     .addon {
+        display: flex;
+        align-items: center;
         padding: 4px 8px;
         background-color: #f0f5f5;
         border: 1px solid $border_input;
@@ -102,6 +129,10 @@
     .__toolbar {
         select {
             width: auto;
+            padding: 8px 20px 8px 12px;
+            &:focus {
+                border: 1px solid $border_input;
+            }
         }
     }
 }

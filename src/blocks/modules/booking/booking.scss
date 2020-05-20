@@ -3,16 +3,42 @@
     flex-wrap: wrap;
     overflow-x: auto;
     background: #fff;
+    position: relative;
     padding: 1rem;
     margin: 1rem;
+    &.is-sticky {
+        .booking-header {
+            .bh-cd-box {
+                background-color: #fff;
+                position: sticky;
+                border-right: 1px solid $border_cell;
+                left: -1rem;
+                z-index: 100;
+            }
+        }
+        .booking-body {
+            .booking-body-category, .booking-body-room {
+                .bb-name {
+                    position: sticky;
+                    border-right: 1px solid $border_cell;
+                    left: -1rem;
+                    z-index: 100;
+                }
+            }
+        }
+    }
     &-header {
         display: flex;
         align-items: center;
         padding: 0 .5rem 0 0;
         .bh-cd-box {
+            display: flex;
+            justify-content: center;
             width: 300px;
             text-align: center;
+            align-self: stretch;
             .bh-current-date {
+                margin: auto;
                 display: inline-block;
                 .group {
                     margin: 0;
@@ -73,7 +99,7 @@
                 align-items: center;
                 justify-content: space-between;
                 width: 100%;
-                margin: 1rem 0;
+                margin: .5rem 0 1rem 0;
                 .cell {
                     border-left: 1px solid $border_cell;
                     border-top: 1px solid $border_cell;
@@ -83,17 +109,18 @@
                         border-right: 1px solid $border_cell;
                     }
                     &.current {
-                        &:before {
-                            content: "";
-                            position: absolute;
-                            width: 12px;
-                            height: 12px;
-                            border-radius: 50%;
-                            top: -6px;
-                            left: calc(100% / (24 / var(--data-hour)) - 6px);
-                            background-color: #e41e1e;
-                            z-index: 10;
-                        }
+                        background-position: top center;
+                        //&:before {
+                        //    content: "";
+                        //    position: absolute;
+                        //    width: 12px;
+                        //    height: 12px;
+                        //    border-radius: 50%;
+                        //    top: -6px;
+                        //    left: calc(100% / (24 / var(--data-hour)) - 6px);
+                        //    background-color: #e41e1e;
+                        //    z-index: 10;
+                        //}
                     }
                 }
             }
@@ -136,12 +163,15 @@
             align-items: center;
             border-bottom: 1px solid $border_cell;
             border-left: 1px solid $border_cell;
+            position: relative;
             .bb-name {
                 display: flex;
                 align-items: center;
+                align-self: stretch;
                 width: 300px;
                 padding: 0 .4rem;
                 font-size: rem(14);
+                background-color: #fff;
                 > div {
                     color: #2f3034;
                     &:hover {
@@ -155,6 +185,10 @@
                         overflow: hidden;
                         white-space: nowrap;
                     }
+                }
+                &.cloned {
+                    position: absolute;
+                    left: 0;
                 }
             }
             .bb-free {
@@ -188,7 +222,7 @@
                     color: #667686;
                     background-color: #E0F7F7;
                     .count {
-                        padding: .8rem .2rem .4rem 0;
+                        padding: .8rem .4rem .4rem 0;
                     }
                 }
             }
@@ -230,7 +264,7 @@
                 position: absolute;
                 top: -1.4rem;
                 left: .5rem;
-                font-size: rem(13);
+                font-size: rem(14);
             }
         }
         &.last-day {
@@ -239,19 +273,23 @@
                 position: absolute;
                 top: -1.4rem;
                 right: .5rem;
-                font-size: rem(13);
+                font-size: rem(14);
             }
         }
         &.current {
-            &:after {
-                content: "";
-                position: absolute;
-                width: 1px;
-                left: calc(100% / (24 / var(--data-hour)));
-                top: 0;
-                bottom: 0;
-                background-color: #e41e1e;
-            }
+            background-image: url("../img/klyaksa.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: bottom right;
+            //&:after {
+            //    content: "";
+            //    position: absolute;
+            //    width: 1px;
+            //    left: calc(100% / (24 / var(--data-hour)));
+            //    top: 0;
+            //    bottom: 0;
+            //    background-color: #e41e1e;
+            //}
         }
         &.selected {
             .count {

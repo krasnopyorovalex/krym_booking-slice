@@ -7,35 +7,59 @@
             <div class="tab-content is_active">
                 <div class="row">
                     <div class="col-2">
-                        <div class="group">
-                            <label for="f-count">Max кол-во человек в номере</label>
-                            <input type="text" id="f-count">
+                        <div class="group placement">
+                            <div class="to-line">
+                                <label for="f-general">Основных мест в номере</label>
+                                <select name="general" id="f-general">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="group">
-                            <label for="f-general">Основных мест в номере</label>
-                            <input type="text" id="f-general">
+                        <div class="group placement">
+                            <div class="to-line">
+                                <label for="f-adults">Взрослых в номере</label>
+                                <select name="general" id="f-adults">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="group">
-                            <label for="f-adults">Взрослых в номере</label>
-                            <input type="text" id="f-adults">
-                        </div>
-                        <div class="group">
-                            <label for="f-child">Детей до 2 лет</label>
-                            <input type="text" id="f-child">
+                        <div class="group placement">
+                            <div class="to-line">
+                                <label for="f-dop">Дополнительных мест</label>
+                                <select name="general" id="f-dop">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                     <div class="col-2">
-                        <div class="group">
-                            <label for="f-child2">Детей от 3 до 5 лет</label>
-                            <input type="text" id="f-child2">
+                        <div class="group placement">
+                            <div class="to-line">
+                                <label for="f-child">Ребёнок от 0 до 2 лет</label>
+                                <input type="text" id="f-child" value="0">
+                            </div>
                         </div>
-                        <div class="group">
-                            <label for="f-child3">Детей от 5 до 12 лет</label>
-                            <input type="text" id="f-child3">
+                        <div class="group placement">
+                            <div class="to-line">
+                                <label for="f-child2">Ребёнок от 3 до 5 лет</label>
+                                <input type="text" id="f-child2" value="0">
+                            </div>
                         </div>
-                        <div class="group">
-                            <label for="f-dop">Дополнительных мест</label>
-                            <input type="text" id="f-dop">
+                        <div class="group placement">
+                            <div class="to-line">
+                                <label for="f-child3">Ребёнок от 5 до 12 лет</label>
+                                <input type="text" id="f-child3" value="0">
+                            </div>
                         </div>
                     </div>
                     <div class="col-8">

@@ -47,7 +47,7 @@ select.__toolbar-item {
     vertical-align: middle;
 }
 
-.__toolbar-item:hover,
+.__toolbar-item:not(select):hover,
 .__toolbar-item.active {
     background: #e5e5e5;
 }

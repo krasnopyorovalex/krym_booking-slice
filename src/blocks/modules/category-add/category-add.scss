@@ -6,6 +6,12 @@
         padding: 1rem 2rem;
         border: 1px solid $border_input;
     }
+    .title {
+        font-size: rem(16);
+        margin: 0 0 1rem 0;
+        padding: 0 0 1rem 0;
+        border-bottom: 1px solid $border_input;
+    }
 }
 .category-services {
     margin: 0 0 .5rem 0;
